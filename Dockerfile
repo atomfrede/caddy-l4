@@ -1,6 +1,6 @@
 FROM caddy:2.11-builder AS caddy-builder
 
-RUN xcaddy build --with github.com/mholt/caddy-l4
+RUN xcaddy build --with github.com/mholt/caddy-l4 --with github.com/anujc4/caddy-geoblock
 
 FROM caddy:2.11
 
